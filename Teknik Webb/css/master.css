@@ -4,13 +4,13 @@ h2{
 
 }
 header{
-  background-color: blue;
+  background-color: gray;
   height: 50px;
   width: 600px;
 
 }
 nav{
-  background-color: lightblue;
+  background-color: lightgray;
   height: 50px;
   width: 600px;
 
@@ -22,13 +22,13 @@ main{
 
 }
 aside{
-  background-color: green;
+  background-color: lightblue;
   height: 200px;
   width: 200px;
 
 }
 footer{
-  background-color: lightblue;
+  background-color: lightgray;
   height: 200px;
   width: 600px;
 
