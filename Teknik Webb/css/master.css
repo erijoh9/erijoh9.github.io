@@ -6,41 +6,54 @@ h2{
 header{
   background-color: gray;
   height: 50px;
-  width: 600px;
+  width: 100%;
 
 }
 nav{
   background-color: lightgray;
   height: 50px;
-  width: 600px;
+  width: 100%;
 
 }
 main{
   background-color: blue;
   height: 200px;
-  width: 400px;
+  width: 70%;
 
 }
 aside{
   background-color: lightblue;
   height: 200px;
-  width: 200px;
+  width: 30%;
 
 }
 footer{
   background-color: lightgray;
   height: 200px;
-  width: 600px;
+  width: 100%;
 
 }
 #mainwrapper{
   display:flex;
 
 }
-
 #wrapper{
-  width: 600px;
+  width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+  }
+  @media only screen and (max-width: 600px) {
+
+  #mainwrapper{
+  display:felx;
+  felx-direction: column;
+    }
+  main{
+    width: 100%
+    }
+  aside{
+    width: 100%
+    }
 
 }
