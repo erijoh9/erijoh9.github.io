@@ -1,57 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+a:link, a:visited {
+  background-color: #ccc;
+  color: black;
+  height: 15%;
+  width: 50%;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
 
-<! DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/master.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+a:hover, a:active {
+  color: #ccc;
+  background-color: black;
+  text-decoration: underline;
 
-    <div id="wrapper">
-    <titel> Eric Johansson </title>
-    </div>
+}
 
-  </head>
-
-    <body>
-
-
-    <div id="wrapper">
-
-    <header>
-      Header
-
-      <a href="http://youtube.com">youtube </a>
-    </header>
-
-
-    <nav>
-
-      <a href="index.html">start sidan</a>
-      <a href="chassie.html">chassie</a>
-      <a href="cpu.html">cpu</a>
-      <a href="gpu.html">grafikkort</a>
-      <a href="ram.html">ram minne</a>
-      <a href="nätaggregat.html">nätaggregat</a>
-
-    </nav>
-
-    <div id="mainwrapper">
-      <main>
-        Detta är nätaggregat sidan
-
-      </main>
-
-      <aside class="">
-        Aside
-      </aside>
-    </div>
-
-      <footer>
-        Footer
-      </footer>
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
 
-    </div>
+section {
+  display: -webkit-flex;
+  display: flex;
+}
 
-  </body>
-</html>
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+main {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+
+footer {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Datorns Uppbyggnad</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Start sidan</a></li>
+      <li><a href="chassie.html">Chassie</a></li>
+      <li><a href="cpu.html">CPU</a></li>
+      <li><a href="gpu.html">Grafikkort</a></li>
+      <li><a href="ram.html">Ram minne</a></li>
+      <li><a href="nätaggregat.html"><b>Nätaggregat</b></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Nätaggregat sidan</h1>
+    <p>Detta är Nätaggregat sidan</p>
+
+  </main>
+</section>
+
+<footer>
+  <p>Eric Johansson</p>
+</footer>
+
+</body>
