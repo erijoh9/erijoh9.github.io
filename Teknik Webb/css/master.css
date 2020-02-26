@@ -1,41 +1,19 @@
-h2{
-
-
-}
-header{
-  height: 50px;
-  width: 100%;
-
-}
-nav{
-  height: 50px;
-  width: 100%;
-
-}
-main{
-  height: 200px;
-  width: 70%;
-
-}
-aside{
-  height: 200px;
-  width: 30%;
-
-}
-footer{
-  height: 100px;
-  width: 100%;
-
-
-
-
 
   @media only screen and (max-width: 600px) {
+}
 
+a:link {
+  text-decoration: none;
+}
 
-  main{
-    width: 100%;
-    }
-  }
+a:visited {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
